@@ -1,0 +1,98 @@
+SYSTEM REQUIREMENT CHECKER PYTHON PACKAGE
+
+brief: tells if computer has recommended specs (set by author of the program) to run the program.
+
+1. Read from a json file called 'MINREQ.json'
+ structure of JSON:
+        {
+             recommended__req{
+                CPU : "";
+                RAM : "";
+                //add later
+                GPU : "" ;
+                DISK_space : "";
+            }
+
+            //add later
+            min_req{
+
+            }
+            overridable :True/Flase
+
+        }
+
+2. Display if it matches recommended sys reqs
+
+OPTIONS : 
+Display/write current system : Shows the current system secs and/or writes them into json file
+ovverrideable : lets user override min reqs
+
+//add later
+automatic recomendation system that gives min_req on its own by using time required to run full program ,
+taking the current cpu score from geeknbench and calculating delta'
+
+
+HOW IT WORKS:
+
+accesses a sqlite ? database with info about x86/ AMD 64 processors (start with only 35) ranked in order of benchmark scores
+read data from json and convert it to query  check if current processor is above or below in the db
+
+
+
+WORKING METHOD
+
+Step 1 : user installs specchecc : pip install specchecc
+
+Step 2: user runs specchecc init in CWD (-r defaults )
+
+Step 3: Spec returns these questions (leaving blank defaults)
+
+        1.recommended cpu : current / CPU brand name (checks if exists in db and returns error if not)
+
+        2.recommended RAM :current i.e 13.88GB / 8.00GB
+
+        3.recommended GPU: current
+
+        4. add message: custom message / leave blank defaults
+
+
+step 4 : creates the json file recc.JSON
+
+Step 5 : User adds import specchecc    specchecc.printcheck() in  beginning of program (prints in console) specchecc.check() returns string
+
+Step 6: when program is run specchecc checks system and gives warning
+
+
+
+
+milestone 1: get cpu information  complete
+
+milestone 2: write data into json file semi complete -- format better?
+
+milestone 3: write simple sqlite db complete 
+
+milestone 3.1: check if a model is present in db complete
+
+
+milestone 4 : use datafrom json in sqlite query complete
+
+milestone 5: complete the db for 30 processors complete has 2000 entries
+
+milestone 6 : add RAM checker complete
+
+milestone make json writer function that writes stuff.
+
+MILESTONE MAKE  module
+
+milestone 7: write tests
+
+milestone 8: change from CPU_Stepping to CPU_BrandName
+
+milestone 9: new DB with geekbench scores
+
+milestone 10 : make it platform independent
+
+
+
+
+
