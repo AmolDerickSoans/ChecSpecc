@@ -1,3 +1,4 @@
+
 # ChecSpecc
 Python package that checks if computer meets recommended specifications to run python programs
 (Few features only work on windows)
@@ -16,5 +17,7 @@ Python package that checks if computer meets recommended specifications to run p
 - Fixing some issues to get CPU name from MacOS (platform.system == Darwin)
 
 ## Current Build
+
 ![screen-capture](https://user-images.githubusercontent.com/22007192/127732974-43021c3a-a00f-4bbe-8c98-23bfe158cbb5.gif)
 
+![Screenshot (17)](https://user-images.githubusercontent.com/22007192/127733010-b8ca6434-3ff3-473a-bd51-e63800edcb0f.png)
