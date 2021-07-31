@@ -20,4 +20,5 @@ Python package that checks if computer meets recommended specifications to run p
 
 ![screen-capture](https://user-images.githubusercontent.com/22007192/127732974-43021c3a-a00f-4bbe-8c98-23bfe158cbb5.gif)
 
-![Screenshot (17)](https://user-images.githubusercontent.com/22007192/127733010-b8ca6434-3ff3-473a-bd51-e63800edcb0f.png)
+![Screenshot (19)](https://user-images.githubusercontent.com/22007192/127733242-e56e4f8b-e18e-4501-ac79-048ced7b535c.png)
+![Screenshot (20)](https://user-images.githubusercontent.com/22007192/127733244-24a37eb7-acf9-4934-a0cb-ac7857e8a382.png)
