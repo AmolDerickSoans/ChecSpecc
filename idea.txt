@@ -93,6 +93,14 @@ milestone 9: new DB with geekbench scores
 milestone 10 : make it platform independent
 
 
+USAGE:
+        Once the whl packaage is installed using the pip install command, utility can be directly executed from terminal/CMD, with the command
+                checspecc init
+
+        also same utility can be used in a script by importing the packaage as 
+                form ChecSpecc.main import checkspec
+                *checkspec is a function, which expects list of commands, e.g checkspec(['init'])
+
 
 
 
