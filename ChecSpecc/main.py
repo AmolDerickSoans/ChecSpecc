@@ -1,7 +1,7 @@
 import sys
 
-from specchecc import compare , connection_handler
-from makeFile import  getSystemInfo
+from ChecSpecc.specchecc import compare , connection_handler
+from ChecSpecc.makeFile import  getSystemInfo
 
 
 
@@ -12,7 +12,10 @@ available_commands = {
     }
 }
 
-def main(argv):
+def checkspec(argv : list = None):
+    if argv is None:
+        argv = sys.argv[1:]
+
     if not len(argv) or argv[0] not in available_commands.keys():
         print('Available commands: ')
         for key, val in available_commands.items():
@@ -29,7 +32,7 @@ def main(argv):
 
 
 if __name__ == '__main__':
-    main(sys.argv[1:])
+    checkspec(sys.argv[1:])
 
     connection_handler("cpu_speedtraq.db")
     compare()

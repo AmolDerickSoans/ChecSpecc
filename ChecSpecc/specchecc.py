@@ -3,7 +3,7 @@ import sqlite3
 import psutil
 import json
 from sqlite3 import Error
-from makeFile import getCPU
+from ChecSpecc.makeFile import getCPU
 
 
     
